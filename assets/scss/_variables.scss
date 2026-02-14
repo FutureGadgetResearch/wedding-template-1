@@ -1,0 +1,54 @@
+// ==============================================
+// Color Palette
+// ==============================================
+$color-white:           #FFFFFF;
+$color-ivory:           #FFF9F0;
+$color-champagne:       #C9B458;
+$color-champagne-light: #E8D9A0;
+$color-charcoal:        #2C2C2C;
+$color-charcoal-light:  #5A5A5A;
+$color-overlay:         rgba(44, 44, 44, 0.45);
+
+// ==============================================
+// Typography
+// ==============================================
+$font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+$font-body:    'Lato', 'Helvetica Neue', Arial, sans-serif;
+
+$font-size-base:  18px;
+$font-size-small: 14px;
+$font-size-large: 24px;
+$font-size-h1:    3.5rem;
+$font-size-h2:    2.2rem;
+$font-size-h3:    1.3rem;
+
+$font-weight-light:   300;
+$font-weight-regular: 400;
+$font-weight-bold:    700;
+
+$line-height-base:    1.7;
+$letter-spacing-wide: 0.15em;
+
+// ==============================================
+// Spacing
+// ==============================================
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 6rem;
+$section-padding: $spacing-xl $spacing-md;
+
+// ==============================================
+// Breakpoints
+// ==============================================
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// ==============================================
+// Misc
+// ==============================================
+$max-width:       900px;
+$border-radius:   4px;
+$transition-speed: 0.3s;

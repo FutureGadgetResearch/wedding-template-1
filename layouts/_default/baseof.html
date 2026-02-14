@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }} | {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}</title>
+  <meta name="description" content="Wedding Save the Date for {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="{{ .Site.Title }} - {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}">
+  <meta property="og:description" content="Wedding Save the Date for {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}">
+  <meta property="og:image" content="{{ .Site.Data.wedding.hero.image | absURL }}">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display (serif headings) + Lato (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet (Hugo Pipes: SCSS → CSS → minified) -->
+  {{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+
+  {{ block "main" . }}{{ end }}
+
+  <!-- Pass event date from data to JS for countdown -->
+  <script>
+    var weddingDate = "{{ .Site.Data.wedding.event.date }}T{{ .Site.Data.wedding.event.time_24h }}";
+  </script>
+  <script src="{{ "js/countdown.js" | relURL }}"></script>
+</body>
+</html>

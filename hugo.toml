@@ -1,0 +1,4 @@
+baseURL      = "https://example.com/"
+languageCode = "en-us"
+title        = "Save the Date"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]

@@ -1,0 +1,38 @@
+<section class="hero" id="hero">
+  <div class="hero__image-wrapper">
+    <img
+      src="{{ .Site.Data.wedding.hero.image | relURL }}"
+      alt="{{ .Site.Data.wedding.hero.alt }}"
+      class="hero__image"
+    >
+  </div>
+  <div class="hero__overlay">
+    <div class="hero__content">
+      <p class="hero__subtitle">Save the Date</p>
+      <h1 class="hero__names">
+        {{ .Site.Data.wedding.couple.name_1 }}
+        <span class="hero__ampersand">{{ .Site.Data.wedding.couple.connector }}</span>
+        {{ .Site.Data.wedding.couple.name_2 }}
+      </h1>
+      <p class="hero__date">{{ .Site.Data.wedding.event.date_display }}</p>
+      <div class="hero__countdown" id="countdown">
+        <div class="countdown__unit">
+          <span class="countdown__number" id="countdown-days">--</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="countdown-hours">--</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="countdown-minutes">--</span>
+          <span class="countdown__label">Minutes</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="countdown-seconds">--</span>
+          <span class="countdown__label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

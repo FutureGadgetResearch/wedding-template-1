@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $font-weight-light;
+  line-height: $line-height-base;
+  color: $color-charcoal;
+  background-color: $color-ivory;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-heading;
+  font-weight: $font-weight-regular;
+  line-height: 1.2;
+  color: $color-charcoal;
+}
+
+p {
+  margin-bottom: $spacing-sm;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

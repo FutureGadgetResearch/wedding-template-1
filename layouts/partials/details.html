@@ -1,0 +1,27 @@
+<section class="details" id="details">
+  <div class="details__container">
+    <h2 class="details__heading">Celebration Details</h2>
+    <div class="details__grid">
+      <div class="details__item">
+        <span class="details__icon">&#128205;</span>
+        <h3 class="details__label">Venue</h3>
+        <p class="details__value">{{ .Site.Data.wedding.event.venue }}</p>
+      </div>
+      <div class="details__item">
+        <span class="details__icon">&#128204;</span>
+        <h3 class="details__label">Location</h3>
+        <p class="details__value">{{ .Site.Data.wedding.event.city }}, {{ .Site.Data.wedding.event.state }}</p>
+      </div>
+      <div class="details__item">
+        <span class="details__icon">&#128336;</span>
+        <h3 class="details__label">Time</h3>
+        <p class="details__value">{{ .Site.Data.wedding.event.time }}</p>
+      </div>
+      <div class="details__item">
+        <span class="details__icon">&#128197;</span>
+        <h3 class="details__label">Date</h3>
+        <p class="details__value">{{ .Site.Data.wedding.event.date_display }}</p>
+      </div>
+    </div>
+  </div>
+</section>

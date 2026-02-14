@@ -1,0 +1,48 @@
+{
+  "couple": {
+    "name_1": "Jane",
+    "name_2": "John",
+    "connector": "&"
+  },
+  "event": {
+    "date": "2026-09-15",
+    "date_display": "September 15, 2026",
+    "time": "4:00 PM",
+    "time_24h": "16:00:00",
+    "venue": "The Grand Ballroom",
+    "city": "Austin",
+    "state": "Texas"
+  },
+  "hero": {
+    "image": "/images/SaveTheDate.jpg",
+    "alt": "Save the Date - Jane and John"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "When should I RSVP by?",
+        "answer": "Please RSVP by August 1, 2026."
+      },
+      {
+        "question": "What is the dress code?",
+        "answer": "Semi-formal / cocktail attire."
+      },
+      {
+        "question": "Will there be parking available?",
+        "answer": "Yes, complimentary valet parking will be provided at the venue."
+      },
+      {
+        "question": "Can I bring a plus one?",
+        "answer": "Please refer to your invitation for details on plus ones."
+      },
+      {
+        "question": "Will the ceremony be indoors or outdoors?",
+        "answer": "The ceremony will be held outdoors, weather permitting, with an indoor backup plan."
+      }
+    ]
+  },
+  "footer": {
+    "message": "We can't wait to celebrate with you!"
+  }
+}

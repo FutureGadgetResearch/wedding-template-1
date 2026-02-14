@@ -1,0 +1,11 @@
+<section class="faq" id="faq">
+  <div class="faq__container">
+    <h2 class="faq__heading">{{ .Site.Data.wedding.faq.heading }}</h2>
+    {{ range .Site.Data.wedding.faq.items }}
+    <details class="faq__item">
+      <summary class="faq__question">{{ .question }}</summary>
+      <p class="faq__answer">{{ .answer }}</p>
+    </details>
+    {{ end }}
+  </div>
+</section>

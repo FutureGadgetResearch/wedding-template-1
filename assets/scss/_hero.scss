@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: $color-overlay;
+    padding: $spacing-lg $spacing-md;
+  }
+
+  &__content {
+    text-align: center;
+    color: $color-white;
+    max-width: $max-width;
+  }
+
+  &__subtitle {
+    font-family: $font-body;
+    font-weight: $font-weight-light;
+    font-size: $font-size-large;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    margin-bottom: $spacing-sm;
+    color: $color-champagne-light;
+  }
+
+  &__names {
+    font-family: $font-heading;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-regular;
+    color: $color-white;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__ampersand {
+    font-style: italic;
+    color: $color-champagne;
+    margin: 0 0.3em;
+  }
+
+  &__date {
+    font-family: $font-body;
+    font-size: $font-size-large;
+    font-weight: $font-weight-light;
+    letter-spacing: $letter-spacing-wide;
+    margin-bottom: $spacing-lg;
+    color: $color-champagne-light;
+  }
+
+  &__countdown {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-md;
+  }
+}
+
+.countdown {
+  &__unit {
+    text-align: center;
+    min-width: 70px;
+  }
+
+  &__number {
+    display: block;
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+  }
+
+  &__label {
+    display: block;
+    font-family: $font-body;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-wide;
+    color: $color-champagne-light;
+    margin-top: $spacing-xs;
+  }
+}
