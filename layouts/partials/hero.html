@@ -1,7 +1,15 @@
+{{- $heroImage := "" -}}
+{{- if fileExists "static/images/primary.webp" -}}
+  {{- $heroImage = "/images/primary.webp" -}}
+{{- else if fileExists "static/images/primary.png" -}}
+  {{- $heroImage = "/images/primary.png" -}}
+{{- else if fileExists "static/images/primary.jpg" -}}
+  {{- $heroImage = "/images/primary.jpg" -}}
+{{- end -}}
 <section class="hero" id="hero">
   <div class="hero__image-wrapper">
     <img
-      src="{{ .Site.Data.wedding.hero.image | relURL }}"
+      src="{{ $heroImage | relURL }}"
       alt="{{ .Site.Data.wedding.hero.alt }}"
       class="hero__image"
     >

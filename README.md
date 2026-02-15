@@ -2,7 +2,7 @@
 
 A clean, elegant, single-page "Save the Date" wedding website built with Hugo and ready to deploy on GitHub Pages in minutes.
 
-![Preview](static/images/SaveTheDate.jpg)
+![Preview](static/images/primary.jpg)
 
 ## Features
 
@@ -60,7 +60,6 @@ Open `data/wedding.json` and update with your details:
 ```json
 {
   "hero": {
-    "image": "/images/SaveTheDate.jpg",
     "alt": "Save the Date - Your Names"
   }
 }
@@ -96,9 +95,7 @@ Add, edit, or remove questions and answers:
 
 ### 3. Replace the Hero Image
 
-Replace `static/images/SaveTheDate.jpg` with your own photo. For best results, use a high-resolution image (1920x1080 pixels or larger). The image will be displayed as a full-screen background in the hero section.
-
-If you use a different filename, update the `hero.image` path in `data/wedding.json`.
+Replace `static/images/primary.jpg` with your own photo (named `primary.jpg`, `primary.png`, or `primary.webp`). For best results, use a high-resolution image (1920x1080 pixels or larger). The image will be displayed as a full-screen background in the hero section. The template auto-detects the format, preferring webp > png > jpg.
 
 ### 4. Deploy
 
@@ -148,7 +145,7 @@ Visit `http://localhost:1313` in your browser. Changes to `data/wedding.json` or
 │       └── _responsive.scss       # Mobile/tablet/desktop breakpoints
 ├── static/
 │   ├── images/
-│   │   └── SaveTheDate.jpg        # Hero image (replace with yours)
+│   │   └── primary.jpg             # Hero image (replace with .jpg, .png, or .webp)
 │   └── js/
 │       └── countdown.js           # Countdown timer script
 ├── .github/

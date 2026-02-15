@@ -9,7 +9,15 @@
   <!-- Open Graph for social sharing -->
   <meta property="og:title" content="{{ .Site.Title }} - {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}">
   <meta property="og:description" content="Wedding Save the Date for {{ .Site.Data.wedding.couple.name_1 }} {{ .Site.Data.wedding.couple.connector }} {{ .Site.Data.wedding.couple.name_2 }}">
-  <meta property="og:image" content="{{ .Site.Data.wedding.hero.image | absURL }}">
+  {{- $heroImage := "" -}}
+  {{- if fileExists "static/images/primary.webp" -}}
+    {{- $heroImage = "/images/primary.webp" -}}
+  {{- else if fileExists "static/images/primary.png" -}}
+    {{- $heroImage = "/images/primary.png" -}}
+  {{- else if fileExists "static/images/primary.jpg" -}}
+    {{- $heroImage = "/images/primary.jpg" -}}
+  {{- end -}}
+  <meta property="og:image" content="{{ $heroImage | absURL }}">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts: Playfair Display (serif headings) + Lato (sans body) -->
